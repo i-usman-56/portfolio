@@ -76,13 +76,11 @@ The easiest option is [Vercel](https://vercel.com/new):
 
 1. Push your copy to GitHub.
 2. Import the repository on Vercel.
-3. Add an environment variable `NEXT_PUBLIC_SITE_URL` set to your domain, e.g. `https://yourname.dev`.
-4. Deploy.
+3. Deploy. Vercel's production domain is picked up automatically for SEO and link previews.
 
-`NEXT_PUBLIC_SITE_URL` matters: without it, links in Google results and social previews point to
-`localhost`. The build prints a warning if it's missing.
-
-Any host that runs Node.js also works: `npm run build`, then `npm run start`.
+Any host that runs Node.js also works (`npm run build`, then `npm run start`). There, set the
+environment variable `NEXT_PUBLIC_SITE_URL` to your domain (e.g. `https://yourname.dev`); without
+it, links in Google results and social previews point to `localhost`, and the build prints a warning.
 
 ## Customising further
 
