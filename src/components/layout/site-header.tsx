@@ -26,7 +26,7 @@ export function SiteHeader() {
               />
             ))}
           </nav>
-          <MobileNav items={siteConfig.nav} />
+          <MobileNav items={siteConfig.nav} title={siteConfig.name} />
           <ThemeToggle />
         </div>
       </Container>
